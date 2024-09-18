@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".view.activity.CartActivity">
+
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_space"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/main_space"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extrabold"
+            android:text="@string/cart"
+            android:textAllCaps="true"
+            android:textColor="@color/textWhiteColor"
+            android:textSize="@dimen/text_title_size" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrCartProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/lnHeader"
+        android:layout_above="@id/lnCheckout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Danh sách sản phẩm -->
+            <LinearLayout
+                android:id="@+id/lnCartProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_space"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/main_space">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/bold"
+                        android:textAllCaps="true"
+                        android:text="@string/product"
+                        android:textColor="@color/textPrimaryColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvRemoveAllProducts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/remove_all"
+                        android:textColor="@color/textSecondPrimaryColor"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCartProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_space"
+                    tools:listitem="@layout/item_cart_product" />
+
+            </LinearLayout>
+
+            <!-- Danh sách vé -->
+            <LinearLayout
+                android:id="@+id/lnCartTickets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_space"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/main_space">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/bold"
+                        android:textAllCaps="true"
+                        android:text="@string/ticket"
+                        android:textColor="@color/textPrimaryColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvRemoveAllTicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/remove_all"
+                        android:textColor="@color/textSecondPrimaryColor"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCartTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_space"
+                    tools:listitem="@layout/item_playground" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lnCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_space"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/main_space"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_space"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/regular"
+                android:text="@string/total"
+                android:textColor="@color/textSecondPrimaryColor"
+                android:textSize="@dimen/medium_text_size" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/extrabold"
+                android:text="@string/priceProduct"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/medium_text_size"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/large_space"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/extrabold"
+            android:text="@string/checkout"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

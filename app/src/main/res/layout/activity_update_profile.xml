@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".view.activity.UpdateProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_space">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/main_space"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extrabold"
+            android:text="@string/edit_profile"
+            android:textAllCaps="true"
+            android:textColor="@color/textWhiteColor"
+            android:textSize="@dimen/text_title_size" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_marginTop="@dimen/main_space"
+        app:cardCornerRadius="50dp">
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/logo_app"
+            android:src="@drawable/logo"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/lnUpdateProfileForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="@dimen/main_space"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/full_name"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondPrimaryColor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/small_space"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/button_selector"
+            android:fontFamily="@font/regular"
+            android:hint="@string/enter_your_full_name"
+            android:padding="12dp"
+            android:textColor="@color/textPrimaryColor"
+            android:textColorHint="@color/textPrimaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_space"
+            android:fontFamily="@font/bold"
+            android:text="@string/email"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondPrimaryColor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:fontFamily="@font/regular"
+            android:hint="@string/enter_your_email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/textPrimaryColor"
+            android:textColorHint="@color/textPrimaryColor"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_space"
+            android:fontFamily="@font/bold"
+            android:text="@string/phone"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondPrimaryColor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:fontFamily="@font/regular"
+            android:hint="@string/enter_your_phone_number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="@color/textPrimaryColor"
+            android:textColorHint="@color/textPrimaryColor"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_space"
+            android:fontFamily="@font/bold"
+            android:text="@string/address_title"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondPrimaryColor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:fontFamily="@font/regular"
+            android:hint="@string/enter_your_address"
+            android:padding="12dp"
+            android:textColor="@color/textPrimaryColor"
+            android:textColorHint="@color/textPrimaryColor"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSummit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/extrabold"
+        android:text="@string/submit"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:backgroundTint="@null"        />
+
+</LinearLayout>

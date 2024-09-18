@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.PaymentMethodActivity">
+
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/primaryColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_space">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/main_space"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extrabold"
+            android:text="@string/payment_method"
+            android:textAllCaps="true"
+            android:textColor="@color/textWhiteColor"
+            android:textSize="@dimen/text_title_size" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lnHeader"
+        android:orientation="vertical"
+        android:padding="@dimen/main_space">
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/payment_cash"
+            android:buttonTint="@color/radio_button_tint"
+            android:textColor="@color/radio_text_selector"/>
+
+        <RadioButton
+            android:id="@+id/rbCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_space"
+            android:fontFamily="@font/bold"
+            android:text="@string/payment_card"
+            android:buttonTint="@color/radio_button_tint"
+            android:textColor="@color/radio_text_selector" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/main_space"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/extrabold"
+        android:text="@string/checkout"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
+
+</RelativeLayout>

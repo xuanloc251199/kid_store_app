@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">kid_toy_store</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="have_account">Have account?</string>
+    <string name="home">Home</string>
+    <string name="play">Play</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="logo_app">Logo App</string>
+    <string name="setting">Setting</string>
+    <string name="categories">Category</string>
+    <string name="san_pham_hot">Sản phẩm hot</string>
+    <string name="view_more">Xem thêm</string>
+    <string name="name_product">Name Product</string>
+    <string name="priceProduct">0 VND</string>
+    <string name="sold">2.2k</string>
+    <string name="back">Back</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.
+    </string>
+    <string name="detail_product">Detail Product</string>
+    <string name="all_product">All Product</string>
+    <string name="detail_category">Detail Category</string>
+    <string name="name_app">Kid toy Store</string>
+    <string name="play_ground">khu vui chơi</string>
+    <string name="image_playground">Image Playground</string>
+    <string name="date">22 Sep, 2024</string>
+    <string name="playground_name">Playground Name</string>
+    <string name="address">Viet Nam</string>
+    <string name="price">Price:</string>
+    <string name="sold_title">Đã bán:</string>
+    <string name="all_playground">All Playground</string>
+    <string name="detail_playground">Detail Playground</string>
+    <string name="search_hint">Search something</string>
+    <string name="tag">Tag</string>
+    <string name="results_found">55 Results Found</string>
+    <string name="read_all">Read all</string>
+    <string name="remove_all">Remove all</string>
+    <string name="counter">0</string>
+    <string name="total">Total</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping_cost">Shipping Cost</string>
+    <string name="discount">Discount</string>
+    <string name="checkout">Checkout</string>
+    <string name="address_title">Address</string>
+    <string name="edit">Edit</string>
+    <string name="phone_number">0987-654-321</string>
+    <string name="logout">Logout</string>
+    <string name="help">Help</string>
+    <string name="support">Support</string>
+    <string name="information">Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="notification">Notification</string>
+    <string name="quantity">Quantity</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="add_shipping_address">Add Shipping Address</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="add_payment_method">Add Payment Method</string>
+    <string name="place_order">Place Order</string>
+    <string name="order_placed_successfully">Order Placed Successfully</string>
+    <string name="you_will_recieve_an_email_confirmation">You will recieve an email confirmation</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="phone">Phone</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="submit">Submit</string>
+    <string name="product">Product</string>
+    <string name="ticket">Ticket</string>
+    <string name="not_found">Không có sản phẩm nào thuộc danh mục này.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="payment">Payment</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="hint_expiry_date">Expiry Date (MM/YY)</string>
+    <string name="save_card">Save Card</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="hint_address">Enter number house, street</string>
+    <string name="save_address">Save Address</string>
+    <string name="cards">Cards</string>
+    <string name="add_card">Add Card</string>
+    <string name="paid_order">Paid Order</string>
+    <string name="enter_your_card_number">Enter Your Card Number</string>
+    <string name="add_card_menthod">Add Card Menthod</string>
+    <string name="payment_card">Payment Card</string>
+    <string name="payment_cash">Payment Cash</string>
+</resources>

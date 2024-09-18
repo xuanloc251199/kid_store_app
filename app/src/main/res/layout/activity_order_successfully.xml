@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_space"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.activity.OrderSuccessfullyActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/order_success"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_space"
+        android:text="@string/order_placed_successfully"
+        android:fontFamily="@font/extrabold"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="@dimen/large_text_size"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_space"
+        android:text="@string/you_will_recieve_an_email_confirmation"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/secondPrimaryColor"
+        android:textSize="@dimen/small_text_size"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/large_space"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/extrabold"
+        android:text="@string/continue_shopping"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:backgroundTint="@null"/>
+
+</LinearLayout>

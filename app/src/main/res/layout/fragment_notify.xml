@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".view.fragment.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:orientation="vertical"
+        android:padding="@dimen/main_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extrabold"
+            android:text="@string/notification"
+            android:textAllCaps="true"
+            android:textColor="@color/textWhiteColor"
+            android:textSize="@dimen/text_title_size" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvReadNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/main_space"
+            android:fontFamily="@font/regular"
+            android:text="@string/read_all"
+            android:textColor="@color/textSecondPrimaryColor"
+            android:textSize="14sp"
+            android:textAlignment="textStart"/>
+        <TextView
+            android:id="@+id/tvRemoveAllNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/main_space"
+            android:fontFamily="@font/regular"
+            android:text="@string/remove_all"
+            android:textColor="@color/textSecondPrimaryColor"
+            android:textSize="14sp"
+            android:textAlignment="textEnd"/>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/large_space"
+        android:paddingHorizontal="@dimen/main_space"
+        tools:listitem="@layout/item_notify" />
+
+</LinearLayout>
